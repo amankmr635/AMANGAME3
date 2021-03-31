@@ -1,0 +1,143 @@
+*{
+margin: 0;
+padding: 0;
+
+}
+
+body{
+    background-color: white;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+}
+
+.gameContainer{
+background-image: url(Background.jfif);
+width: 100vw;
+height:100vh;
+}
+
+.dino{
+    background-image: url(CHAR2.png);
+    background-size: cover;
+    width: 94px;
+    height: 112px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;  
+    left: 30px;
+}
+
+.obstacle{
+    background-image: url(VILEN.png);
+    background-size: cover;
+    width: 94px;
+    height: 112px;
+    position: absolute;
+    bottom: 0;
+    left: 1150px;
+    
+}
+
+.vilen2{
+
+    animation:vilenAnime 5s linear infinite;
+}
+
+
+.animateHero
+{
+animation:animeHero 0.6s linear infinite;
+}
+
+.gameOver{
+    position: relative;
+    top:63px;
+    font-size: 53px;
+    text-align: center; 
+    font-family: 'Ubuntu', sans-serif;
+    visibility: hidden;
+}
+
+@keyframes animeHero
+{
+0%
+{bottom: 0;}
+25%
+{bottom: 200px;}
+50%
+{bottom: 400px;
+}
+75%
+{bottom:200px;
+
+}
+
+100%
+{bottom: 0;}
+
+}
+
+@keyframes vilenAnime
+{
+    0%
+    {bottom: 0;
+    left: 100vw;}
+    100%
+    {bottom: 0;
+    left: -10vw;}
+}
+#scoreCont{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    right: 45px;
+    top: 31px;
+    border: 2px solid black;
+    padding: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 10px;
+    
+}
+
+/*#level
+{position: relative;
+    top:63px;
+    left: 500px;
+    background-color:rgb(250, 250, 250);
+    font-size: 53px;
+    text-align: center; 
+    font-family: 'Ubuntu', sans-serif;
+    width: 500px;
+    visibility:visible;
+
+
+}
+
+
+
+
+@keyframes levelanimation
+{
+0%
+{top: 300px;
+    border-radius:0;}
+25%
+{top: 300px;
+    border-radius: 500px;
+}
+50%{
+visibility: hidden;
+
+}
+75%
+{
+visibility: hidden;
+}
+
+100%
+{visibility: hidden;}
+
+}
+*/
